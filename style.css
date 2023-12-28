@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #FDFDFD;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 50px calc(100vh - 100px - 10px) 50px;
+}
+
+.header {
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    display: grid;
+    grid-area: header;
+    padding: 10px;
+}
+
+.aside {
+    text-align: center;
+    background-color: blueviolet;
+    grid-area: aside;
+    padding: 10px;
+}
+
+.main {
+    text-align: center;
+    background-color: red;
+    grid-area: main;
+    padding: 10px;
+}
+
+.footer {
+    text-align: center;
+    align-items: center;
+    background-color: blue;
+    display: grid;
+    grid-area: footer;
+    justify-content: center;
+    padding: 10px;
+}
